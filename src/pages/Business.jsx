@@ -1,13 +1,22 @@
 import {useState} from 'react'
+import "../app.css"
+
 const Business = () => {
     const [myNum, setmyNum] = useState(0)
+    const [checkClick, setCheckClick] = useState(false)
 
     const increaseNum= () =>{
         setmyNum(myNum +1)
     }
     const decreaseNum= () =>{
         setmyNum(myNum -1)
+        setCheckClick(true)
+
     }
+    // const newClick = () =>{
+    //     setCheckClick(true)
+    // }
+    // setCheckClick(true)
     return ( <div>
         <br />
         <br />
@@ -18,7 +27,7 @@ const Business = () => {
         <hr />
         
 
-        <button onClick={decreaseNum} style={{
+        <button className={checkClick? `bg-red`: `button`} onClick={decreaseNum } style={{
             width:"90px",
             height:"50px"
         }}> subtract</button>
