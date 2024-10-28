@@ -1,5 +1,5 @@
 import {useState} from 'react'
-import "../app.css"
+import "../App.css"
 
 const Business = () => {
     const [myNum, setmyNum] = useState(0)
