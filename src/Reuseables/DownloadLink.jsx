@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 const DownloadLink = (props) => {
     return ( <DownloadDiv>
-        <img src={props.Icon} alt="" />
+        <div id="icon">{props.Icon} </div>
         <div>
-            <p>{props.Text}</p>
+            <h5>{props.Text}</h5>
             <h4>{props.Title}</h4>
         </div>
 
@@ -15,16 +15,24 @@ export default DownloadLink;
 
 const DownloadDiv = styled.div`
     width: 130px;
-    height: 50px;
+    height: 40px;
     display: flex;
-    padding: 3px;
+    align-items: center;
+    padding: 5px;
     border:1px solid;
     border-radius: 10px;
     background-color: black;
     color: white;
-    p{
+    #icon{
+        img{
+            width: 30px;
+        }
+    }
+    h5{
         margin: 2px;
-        font-size: 12px;
+        font-size: 11px;
+        font-weight: 400;
+        
     }
     h4{
         margin: 0;

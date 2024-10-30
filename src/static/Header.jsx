@@ -73,10 +73,12 @@ justify-content: space-between;
 padding: 10px 50px ;
 height: 50px;
 /* border: 1px solid green; */
-width: 100vw;
+/* width: 100vw; */
 align-items: center;
 box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-
+    a{
+        text-decoration: none;
+    }
 `
 const LogoNav = styled.div`
 /* border:1px solid; */
@@ -92,17 +94,29 @@ img{
     height:  50px;
 }
 
-
 `
 const Navigations = styled.div`
 /* border:1px solid; */
 display: flex;
 width: 500px;
 justify-content: space-around;
+    
+@media (max-width:850px) {
+           display: none;
+        }
+
 
 `
-const SignBtn = styled.div``
-const JoinBtn = styled.div``
+const SignBtn = styled.div`
+    @media (max-width:850px) {
+           display: none;
+        }
+`
+const JoinBtn = styled.div`
+    @media (max-width:850px) {
+           display: none;
+        }
+`
 const ConBtn = styled.div` 
     width: 40px;
     height: 40px;
