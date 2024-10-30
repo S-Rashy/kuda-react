@@ -50,6 +50,12 @@ const HeroSection = styled.div`
            flex-direction: column;
            width: 80vw;
            text-align: center;
+           padding: 5px;
+        }
+
+        @media (max-width:400px) {
+            padding: 0;
+
         }
 `
 const HeroLeft = styled.div` 
@@ -64,7 +70,7 @@ const HeroLeft = styled.div`
 
     h2{
         font-size: 40px;
-        width: 350px;
+        max-width: 350px;
         color: #40196D;
         margin: 0;
     }
@@ -77,11 +83,20 @@ const HeroLeft = styled.div`
     @media (max-width:760px) {
            height: 400px;
            h2{
-            text-align: center;
-            width: 400px;
+                text-align: center;
+                width: 400px;
            }
 
         }
+        @media (max-width:400px) {
+           padding: 0;
+           h2{
+                
+                width: 300px;
+                font-size: 30px;
+           }
+
+        }   
 
 `
 const HeroLink = styled.div`
