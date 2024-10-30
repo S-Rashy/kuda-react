@@ -1,9 +1,9 @@
-import Header from "../static/Header";
+// import Header from "../static/Header";
 
 
 const Personal = () => {
     return ( <div>
-      <Header/>  
+      {/* <Header/>   */}
     </div> );
 }
  

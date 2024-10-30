@@ -3,6 +3,9 @@ import { MdArrowDropDownCircle } from "react-icons/md";
 import styled from "styled-components";
 import {Link} from "react-router-dom"
 
+import Nigeria from "../assets/nigeria.png"
+import JoinButton from "../Reuseables/JoinButton";
+
 
 const Header = () => {
     return (
@@ -49,8 +52,8 @@ const Header = () => {
 
             <Buttons>
                 <SignBtn> Sign In</SignBtn>
-                <JoinBtn> Join Kuda</JoinBtn>
-                <ConBtn> Sign In</ConBtn>
+                <JoinBtn> <JoinButton/> </JoinBtn>
+                <ConBtn> <img src={ Nigeria} alt="" /></ConBtn>
 
 
             </Buttons>
@@ -98,11 +101,27 @@ justify-content: space-around;
 `
 const SignBtn = styled.div``
 const JoinBtn = styled.div``
-const ConBtn = styled.div``
+const ConBtn = styled.div` 
+    width: 40px;
+    height: 40px;
+    background-color: #b8e3b8;
+    /* border: 1px solid; */
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 30px;
+        height: 25px;
+        border-radius: 10px;
+    }
+`
+
 const Buttons = styled.div`
 display: flex;
 justify-content: space-around;
 width: 400px;
+align-items: center;
 
 /* margin: 0px 35px; */
 `
