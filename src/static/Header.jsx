@@ -40,10 +40,12 @@ const Header = () => {
                         </nav>
                     </Link>
 
-                        <nav>
-                        <span>Help</span>
-                        <MdArrowDropDownCircle />
-                        </nav>
+                        <Link to >
+                            <nav>
+                            <span>Help</span>
+                            <MdArrowDropDownCircle />
+                            </nav>
+                        </Link>
 
 
                 </Navigations>
@@ -53,7 +55,7 @@ const Header = () => {
             <Buttons>
                 <SignBtn> Sign In</SignBtn>
                 <JoinBtn> <JoinButton/> </JoinBtn>
-                <ConBtn> <img src={ Nigeria} alt="" /></ConBtn>
+                <ConBtn> <img src={ Nigeria} alt="Nigerian flag" /></ConBtn>
 
 
             </Buttons>
@@ -68,19 +70,19 @@ export default Header;
 const Container = styled.div`
 display: flex;
 justify-content: space-between;
-padding: 0px 30px ;
+padding: 10px 50px ;
 height: 50px;
 /* border: 1px solid green; */
-/* width: 100vw; */
+width: 100vw;
 align-items: center;
 box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 
 `
 const LogoNav = styled.div`
-border:1px solid;
+/* border:1px solid; */
 display: flex;
 justify-content: space-between;
-width: 750px;
+width: 650px;
 color: purple;
 font-weight: 500;
 align-items: center;

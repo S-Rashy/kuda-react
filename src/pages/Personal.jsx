@@ -1,9 +1,11 @@
 // import Header from "../static/Header";
 
+import Hero from "../Components/Hero";
+
 
 const Personal = () => {
     return ( <div>
-      {/* <Header/>   */}
+      <Hero/>  
     </div> );
 }
  
