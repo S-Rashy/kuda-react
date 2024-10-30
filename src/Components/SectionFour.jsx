@@ -56,10 +56,10 @@ const Right4 = styled.div`
         margin: 20px auto 40px;
     }
 
-    @media (max-width:630px) {
+    @media (max-width:680px) {
            padding: 0;
            h2{   
-                width: 300px;
+                width: 450px;
                 font-size: 35px;
            }
            p{
@@ -70,7 +70,7 @@ const Right4 = styled.div`
 
     @media (max-width:450px) {
            h2{ 
-                max-width: 200px;
+                max-width: 300px;
                 font-size: 30px;
            }
            p{

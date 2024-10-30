@@ -2,6 +2,7 @@
 
 import Hero from "../Components/Hero";
 import Info from "../Components/Info";
+import SectionFive from "../Components/SectionFive";
 import SectionFour from "../Components/SectionFour";
 import SectionThree from "../Components/SectionThree";
 
@@ -12,6 +13,7 @@ const Personal = () => {
       <Info/>
       <SectionThree/>
       <SectionFour/>
+      <SectionFive/>
     </div> );
 }
  

@@ -1,26 +1,26 @@
 import styled from "styled-components";
 
 import { FaAngleRight } from "react-icons/fa6";
-import Section3Img from "../assets/section3.png"
+import Section5Img from "../assets/section5.png"
 
-const SectionThree = () => {
-    return ( <Section3>
-        <Left3>
-            <h2>Your phone +<br /> our app + <br /> a debit card = <br />a simpler life.</h2>
-            <p>  We designed a money app for your lifestyle, and you can get a debit card to go with it. That's all you need to make the right money moves.  </p>
-            <a href="#"> Open An Account in Minutes <FaAngleRight /></a>
-        </Left3>
+const SectionFive = () => {
+    return ( <Section5>
+        <Left5>
+            <h2>Save money as you spend it, seriously.</h2>
+            <p>  You can’t avoid spending. That’s how you pay for your needs. But we can help you put money away every time you pay for something. Just set a percentage to save and watch your money grow.  </p>
+            <a href="#"> See all our Savings <FaAngleRight /></a>
+        </Left5>
 
-        <Right3>
-            <img src={Section3Img} alt="" />
-        </Right3>
+        <Right5>
+            <img src={Section5Img} alt="" />
+        </Right5>
 
-    </Section3> );
+    </Section5> );
 }
  
-export default SectionThree;
+export default SectionFive;
 
-const Section3 = styled.div`
+const Section5 = styled.div`
     display: flex;
     justify-content: space-between;
     max-width: 1400px;
@@ -32,23 +32,23 @@ const Section3 = styled.div`
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 40px;
+    gap: 50px;
 
    }
 
 `
-const Left3 = styled.div`
+const Left5 = styled.div`
     width: 50%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
    
     h2{
         font-size: 35px;
         line-height: 45px;
         max-width: 350px;
         color: #40196D;
-        /* margin: 20px auto; */
+        margin: 20px auto;
     }
     p{
         font-size: 14px;
@@ -60,17 +60,22 @@ const Left3 = styled.div`
         max-width: 350px;
         color: #40196D;
         font-weight: 600;
+       
     }
 
-    @media (max-width:630px) {
+    @media (max-width:700px) {
            padding: 0;
            h2{   
-                /* width: 300px; */
+                width: 450px;
                 font-size: 35px;
+                border: 1px solid;
            }
            p{
             font-size: 13px;
+            margin: 30px;
+            width: 450px;
            }
+           
         }  
 
     @media (max-width:450px) {
@@ -86,7 +91,7 @@ const Left3 = styled.div`
         }  
     
 `
-const Right3 = styled.div`
+const Right5 = styled.div`
     width: 60%;
 
     img{
