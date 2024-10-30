@@ -39,12 +39,12 @@ export default Hero;
 const HeroSection = styled.div` 
     max-width: 1400px;
     /* height: calc(100vh-70px); */
-    /* border: 1px solid; */
+    border: 1px solid;
     display: flex;
     padding: 5px 50px;
     justify-content: space-around;
     align-items: center;
-    margin: 0 auto;
+    margin: 10px auto 70px;
 
     @media (max-width:760px) {
            flex-direction: column;
