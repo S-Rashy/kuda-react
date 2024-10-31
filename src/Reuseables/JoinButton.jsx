@@ -10,8 +10,9 @@ const JoinButton = () => {
 export default JoinButton;
 
 const JoinKuda = styled.button`
-    width: 130px;
-    height: 50px;
+    width: 120px;
+    height: 45px;
+    font-size: 13px;
     border-radius: 12px;
     background-color:#40196D ;
     color: white;

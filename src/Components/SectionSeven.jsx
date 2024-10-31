@@ -1,26 +1,26 @@
 import styled from "styled-components";
 
 import { FaAngleRight } from "react-icons/fa6";
-import Section5Img from "../assets/section5.png"
+import Section7Img from "../assets/section7.png"
 
-const SectionFive = () => {
-    return ( <Section5>
-        <Left5>
-            <h2>Save money as you spend it, seriously.</h2>
-            <p>  You can’t avoid spending. That’s how you pay for your needs. But we can help you put money away every time you pay for something. Just set a percentage to save and watch your money grow.  </p>
-            <a href="#"> See all our Savings <FaAngleRight /></a>
-        </Left5>
+const SectionSeven = () => {
+    return ( <Section7>
+        <Left7>
+            <h2>We're always happy to help you.</h2>
+            <p>  You can chat with us on the app, slide into our DMs, tweet, leave an Instagram comment, send an email or call. However you choose to reach out, there’ll always be a friendly person there to make your life easy. </p>
+            <a href="#"> Get help <FaAngleRight /></a>
+        </Left7>
 
-        <Right5>
-            <img src={Section5Img} alt="" />
-        </Right5>
+        <Right7>
+            <img src={Section7Img} alt="" />
+        </Right7>
 
-    </Section5> );
+    </Section7> );
 }
  
-export default SectionFive;
+export default SectionSeven;
 
-const Section5 = styled.div`
+const Section7 = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,7 +38,7 @@ const Section5 = styled.div`
    }
 
 `
-const Left5 = styled.div`
+const Left7 = styled.div`
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -92,7 +92,7 @@ const Left5 = styled.div`
         }  
     
 `
-const Right5 = styled.div`
+const Right7 = styled.div`
     width: 60%;
 
     img{

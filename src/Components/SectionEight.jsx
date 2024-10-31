@@ -1,26 +1,29 @@
 import styled from "styled-components";
 
 import { FaAngleRight } from "react-icons/fa6";
-import Section5Img from "../assets/section5.png"
+import Section8Img from "../assets/section8.png"
 
-const SectionFive = () => {
-    return ( <Section5>
-        <Left5>
-            <h2>Save money as you spend it, seriously.</h2>
-            <p>  You can’t avoid spending. That’s how you pay for your needs. But we can help you put money away every time you pay for something. Just set a percentage to save and watch your money grow.  </p>
-            <a href="#"> See all our Savings <FaAngleRight /></a>
-        </Left5>
+const SectionEight = () => {
+    return ( <Section8>
 
-        <Right5>
-            <img src={Section5Img} alt="" />
-        </Right5>
+        <Left8>
+            <img src={Section8Img} alt="" />
+        </Left8>
 
-    </Section5> );
+        <Right8>
+            <h2>Fees as clear as glass.</h2>
+            <p> We’re serious about free banking, and we will never, ever charge you for anything without your consent.</p>
+            <a href="#">See all our fees <FaAngleRight /></a>
+        </Right8>
+
+        
+
+    </Section8> );
 }
  
-export default SectionFive;
+export default SectionEight;
 
-const Section5 = styled.div`
+const Section8 = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,15 +33,15 @@ const Section5 = styled.div`
     /* border: 1px solid; */
 
     @media (max-width:800px){
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     text-align: center;
-    gap: 50px;
+    gap: 40px;
 
    }
 
 `
-const Left5 = styled.div`
+const Right8 = styled.div`
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -49,7 +52,7 @@ const Left5 = styled.div`
         line-height: 45px;
         max-width: 350px;
         color: #40196D;
-        margin: 20px auto;
+        /* margin: 20px auto; */
     }
     p{
         font-size: 14px;
@@ -61,22 +64,17 @@ const Left5 = styled.div`
         max-width: 350px;
         color: #40196D;
         font-weight: 600;
-       
     }
 
-    @media (max-width:700px) {
+    @media (max-width:630px) {
            padding: 0;
            h2{   
-                width: 450px;
+                /* width: 300px; */
                 font-size: 35px;
-                border: 1px solid;
            }
            p{
             font-size: 13px;
-            margin: 30px;
-            width: 450px;
            }
-           
         }  
 
     @media (max-width:450px) {
@@ -92,11 +90,12 @@ const Left5 = styled.div`
         }  
     
 `
-const Right5 = styled.div`
+const Left8 = styled.div`
     width: 60%;
+    /* border: 1px solid; */
 
     img{
-        width: 100%;
+        width: 90%;
         /* border: 1px solid; */
         margin: auto;
 
