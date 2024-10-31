@@ -1,5 +1,5 @@
 import LogoKuda from "../assets/kuda.png"
-import { MdArrowDropDownCircle } from "react-icons/md";
+import { FaCaretDown } from "react-icons/fa";
 import styled from "styled-components";
 import {Link} from "react-router-dom"
 
@@ -22,28 +22,28 @@ const Header = () => {
                     <Link to ="/">
                         <nav>
                         <span>Personal</span>
-                        <MdArrowDropDownCircle />
+                        <FaCaretDown />
                         </nav>
                     </Link>
 
                     <Link to="/business">
                         <nav>
                         <span>Business</span>
-                        <MdArrowDropDownCircle />
+                        <FaCaretDown />
                         </nav>
                     </Link>
 
                     <Link to="/company">    
                         <nav>
                         <span>Company</span>
-                        <MdArrowDropDownCircle />
+                        <FaCaretDown />
                         </nav>
                     </Link>
 
                         <Link to >
                             <nav>
                             <span>Help</span>
-                            <MdArrowDropDownCircle />
+                            <FaCaretDown />
                             </nav>
                         </Link>
 
@@ -71,7 +71,7 @@ const Container = styled.div`
 display: flex;
 justify-content: space-between;
 padding: 10px 50px ;
-height: 50px;
+height: 60px;
 /* border: 1px solid green; */
 /* width: 100vw; */
 align-items: center;
@@ -84,21 +84,23 @@ const LogoNav = styled.div`
 /* border:1px solid; */
 display: flex;
 justify-content: space-between;
-width: 650px;
+width: 580px;
 color: purple;
 font-weight: 500;
+font-size: 13px;
 align-items: center;
 height: 50px;
 
 img{
-    height:  50px;
+    height:  45px;
+    width: 70px;
 }
 
 `
 const Navigations = styled.div`
 /* border:1px solid; */
 display: flex;
-width: 500px;
+width: 450px;
 justify-content: space-around;
     
 @media (max-width:850px) {
@@ -108,6 +110,7 @@ justify-content: space-around;
 
 `
 const SignBtn = styled.div`
+    font-size: 13px;
     @media (max-width:850px) {
            display: none;
         }
@@ -135,8 +138,8 @@ const ConBtn = styled.div`
 
 const Buttons = styled.div`
 display: flex;
-justify-content: space-around;
-width: 400px;
+justify-content: space-between;
+width: 300px;
 align-items: center;
 
 /* margin: 0px 35px; */
