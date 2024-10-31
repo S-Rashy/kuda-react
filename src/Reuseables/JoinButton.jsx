@@ -16,4 +16,9 @@ const JoinKuda = styled.button`
     border-radius: 12px;
     background-color:#40196D ;
     color: white;
+
+    &:hover{
+        transition-timing-function: ease;
+        transform: translateY(-5px);
+    }
 `

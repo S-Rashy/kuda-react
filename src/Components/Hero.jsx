@@ -39,7 +39,7 @@ export default Hero;
 const HeroSection = styled.div` 
     max-width: 1400px;
     /* height: calc(100vh-70px); */
-    border: 1px solid;
+    /* border: 1px solid; */
     display: flex;
     padding: 5px 50px;
     justify-content: space-around;
