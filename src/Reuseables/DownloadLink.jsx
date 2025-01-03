@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
-const DownloadLink = (props) => {
+const DownloadLink = ({Icon, Text, Title  }) => {
     return ( <DownloadDiv>
-        <div id="icon">{props.Icon} </div>
+        <div id="icon">{Icon} </div>
         <div>
-            <h5>{props.Text}</h5>
-            <h4>{props.Title}</h4>
+            <h5>{Text}</h5>
+            <h4>{Title}</h4>
         </div>
 
     </DownloadDiv> );

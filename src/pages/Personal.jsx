@@ -3,6 +3,7 @@
 import Comments from "../Components/Comments";
 import Hero from "../Components/Hero";
 import Info from "../Components/Info";
+import PartnersOne from "../Components/PartnersOne";
 import SectionEight from "../Components/SectionEight";
 import SectionFive from "../Components/SectionFive";
 import SectionFour from "../Components/SectionFour";
@@ -22,6 +23,7 @@ const Personal = () => {
       <SectionSeven/>
       <SectionEight/>
       <Comments/>
+      <PartnersOne/>
     </div> );
 }
  
