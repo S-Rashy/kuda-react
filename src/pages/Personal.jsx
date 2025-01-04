@@ -1,9 +1,11 @@
 // import Header from "../static/Header";
 
 import Comments from "../Components/Comments";
+import Freedom from "../Components/Freedom";
 import Hero from "../Components/Hero";
 import Info from "../Components/Info";
 import PartnersOne from "../Components/PartnersOne";
+import PartnersTwo from "../Components/PartnersTwo";
 import SectionEight from "../Components/SectionEight";
 import SectionFive from "../Components/SectionFive";
 import SectionFour from "../Components/SectionFour";
@@ -24,6 +26,9 @@ const Personal = () => {
       <SectionEight/>
       <Comments/>
       <PartnersOne/>
+      <PartnersTwo/>
+      <Freedom/>
+
     </div> );
 }
  

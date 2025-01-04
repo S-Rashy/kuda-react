@@ -22,6 +22,7 @@ export default PartnersOne;
 const PartnersOneDiv = styled.div`
     max-width: 14400px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 50px auto;
     img{
