@@ -29,5 +29,6 @@ const Infodiv = styled.div`
     align-items: center;
     width: 80vw;
     height: 80px;
+    margin: auto;
    }
 `

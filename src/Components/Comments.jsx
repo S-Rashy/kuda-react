@@ -49,7 +49,7 @@ const CommentTransition = styled.div`
     display: flex;
     width: 100%;
     gap: 20px;
-    overflow: visible;
+    overflow: hidden;
     position: relative;
     animation-name: slide;
     animation-duration: 60s;
